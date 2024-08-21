@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useFindCepInformation } from "../requests/findCepInformation";
+import { useFindCepInformation } from "@/app/(features)/buscar/cep/requests/findCepInformation";
 
 export const useCepInformation = () => {
   const [cep, setCep] = useState("");

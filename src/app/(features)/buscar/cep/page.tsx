@@ -1,11 +1,7 @@
-import React from "react";
-import * as S from "./components/CepPage/CepPage.styled";
-import { CepPage } from "./components/CepPage/CepPage";
+import { CepPage } from "@/app/(features)/buscar/cep/components/CepPage/CepPage";
 
-export default function SearchByCep() {
-  return (
-    <S.HomePageRoot>
-      <CepPage />
-    </S.HomePageRoot>
-  );
-}
+const SearchByCep = () => {
+  return <CepPage />;
+};
+
+export default SearchByCep;

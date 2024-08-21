@@ -4,11 +4,11 @@ import { ArrowForward } from "@mui/icons-material";
 import { TableCell, TableRow } from "@mui/material";
 import Link from "next/link";
 
-export const TableHead = styled(TableRow)`
+export const TableRowTitle = styled(TableRow)`
   background-color: #ffe600;
 `;
 
-export const TableHeadCep = styled(TableCell)`
+export const TableCellCep = styled(TableCell)`
   color: #0a00b4;
   font-weight: 600;
 `;

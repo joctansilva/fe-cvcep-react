@@ -11,26 +11,32 @@ export const CepPage = () => {
     useCepInformation();
 
   return (
-    <S.FormRoot>
-      <S.FormTitle>Digite o CEP que deseja consultar</S.FormTitle>
-      <S.Form onSubmit={handleSubmit}>
-        <label>
-          <S.FormInput
-            required
-            id="outlined-required"
-            label="CEP"
-            placeholder="Digite o CEP"
-            value={maskCep(cep)}
-            onChange={(e) => setCep(e.target.value.replace(/\D/g, ""))}
-            size="small"
-            inputProps={{ maxLength: 9 }}
-          />
-        </label>
-        <S.FormButton disabled={!isCepValid} type="submit" variant="contained">
-          {isLoading ? "Consultando..." : "Consultar"}
-        </S.FormButton>
-      </S.Form>
-      {data && <CepResultsTable data={data} />}
-    </S.FormRoot>
+    <S.HomePageRoot>
+      <S.FormRoot>
+        <S.FormTitle>Digite o CEP que deseja consultar</S.FormTitle>
+        <S.Form onSubmit={handleSubmit}>
+          <label>
+            <S.FormInput
+              required
+              id="outlined-required"
+              label="CEP"
+              placeholder="Digite o CEP"
+              value={maskCep(cep)}
+              onChange={(e) => setCep(e.target.value.replace(/\D/g, ""))}
+              size="small"
+              inputProps={{ maxLength: 9 }}
+            />
+          </label>
+          <S.FormButton
+            disabled={!isCepValid}
+            type="submit"
+            variant="contained"
+          >
+            {isLoading ? "Consultando..." : "Consultar"}
+          </S.FormButton>
+        </S.Form>
+        {data && <CepResultsTable data={data} />}
+      </S.FormRoot>
+    </S.HomePageRoot>
   );
 };

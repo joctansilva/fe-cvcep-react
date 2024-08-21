@@ -1,6 +1,6 @@
 import Image from "next/image";
 import CvcepLogo from "/public/cvcep-brand.svg";
-import * as S from "./MainHeader.styled";
+import * as S from "@/app/components/Header/MainHeader.styled";
 
 export default function MainHeader() {
   return (

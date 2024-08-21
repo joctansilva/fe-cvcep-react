@@ -1,4 +1,4 @@
-import * as S from "./MainFooter.styled";
+import * as S from "@/app/components/Footer/MainFooter.styled";
 
 export default function MainFooter() {
   return (

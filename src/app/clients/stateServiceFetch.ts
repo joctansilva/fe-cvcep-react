@@ -27,6 +27,6 @@ export const stateServiceFetch = async <TData = any>(
     return res.json() as Promise<TData>;
   } catch (error) {
     console.error("Error fetching data:", error);
-    throw error; // Rejeite a promise para que o erro seja propagado
+    throw error;
   }
 };
