@@ -4,7 +4,7 @@ import { SetStateAction, useEffect, useState } from "react";
 export const useCitiesByState = (stateId: any) => {
   const { data, error, isLoading } = useMunicipalitiesByUf({ state: stateId });
   const [page, setPage] = useState(0);
-  const [rowsPerPage, setRowsPerPage] = useState(13);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
 
   useEffect(() => {
     if (error) {

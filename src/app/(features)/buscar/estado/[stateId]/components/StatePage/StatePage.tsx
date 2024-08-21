@@ -80,7 +80,7 @@ export const StatePage = ({ stateId }: { stateId: string }) => {
           </Table>
         </TableContainer>
         <TablePagination
-          rowsPerPageOptions={[13]}
+          rowsPerPageOptions={[10]}
           component="div"
           count={data?.length || 0}
           rowsPerPage={rowsPerPage}
