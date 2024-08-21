@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center" style={{ marginTop: 16 }}>
+  <img src="/public/cvcep-brand.svg" height="80px" />
+  <h2 style={{ margin: 0 }} align="center">
+    Desafio da CVC - Consulta de CEP
+  </h2>
+</div>
 
-## Getting Started
+## 📖 Sobre o projeto
 
-First, run the development server:
+### 📜 O que é?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O projeto **CVCEP** consiste em uma aplicação web para consulta de CEP, onde o usuário informa o CEP e obtém informações como rua, cidade e estado e também consulta de municípios do estado do CEP informado.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### ⚒️ Tecnologias escolhidas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A escolha das tecnologias para o desenvolvimento do projeto foi baseada em sua familiaridade e na eficiência que proporcionam no desenvolvimento de aplicações web modernas:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **React**: Biblioteca JavaScript para construir interfaces de usuário.
+- **Next.js**: Framework React para a construção de aplicações web com renderização do lado do servidor (SSR) e geração de sites estáticos.
+- **Material-UI (MUI)**: Biblioteca de componentes React para design de interfaces responsivas e modernas.
+- **MUI Icons**: Conjunto de ícones que complementa o Material-UI, permitindo fácil integração de ícones no projeto.
+- **Emotion**: Biblioteca para estilização em JavaScript, utilizada em conjunto com o MUI para criar estilos dinâmicos.
+- **React Query**: Biblioteca para gerenciar o estado de requisições assíncronas, otimizando a performance e simplificando o código.
+- **Zod**: Biblioteca para validação de dados, utilizada para garantir que os dados manipulados na aplicação sejam sempre válidos.
+- **T3-oss/env-nextjs**: Ferramenta para validação e gerenciamento de variáveis de ambiente, garantindo que todas as configurações estejam corretas e seguras.
 
-## Learn More
+## ☁️ Deploy
 
-To learn more about Next.js, take a look at the following resources:
+O projeto foi hospedado na plataforma [Vercel](https://vercel.com/), utilizando o [Next.js](https://nextjs.org/) como framework e o [Material-UI](https://mui.com/) como biblioteca de componentes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [x] [Web](https://fe-cvcep-react.vercel.app/buscar/cep) - Aplicação web que realiza a consulta de CEP.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🚀 Como utilizar para desenvolvimento
 
-## Deploy on Vercel
+### 📦 Pré-requisitos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Para executar o projeto é necessário ter o [Node.js](https://nodejs.org/en/) instalado.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 📂 Clonando o repositório
+
+bash
+
+# Clone o repositório
+
+$ git clone https://github.com/joctansilva/fe-cvcep-react.git
+
+bash
+
+# Acesse a pasta do projeto
+
+$ cd cvcep
+
+📦 Instalando as dependências
+
+bash
+
+# Instale as dependências
+
+$ npm install
+
+🚀 Iniciando o servidor
+
+bash
+
+# Inicie o servidor
+
+$ npm run dev
+
+Pronto, a aplicação está rodando em http://localhost:3000.
+
+🖊️ Autor - @[joctansilva](https://github.com/joctansilva)
