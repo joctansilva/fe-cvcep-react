@@ -5,9 +5,9 @@ export default function HomeLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
       <MainHeader />
-      {children}
+      <main style={{ flex: "1" }}>{children}</main>
       <MainFooter />
     </div>
   );

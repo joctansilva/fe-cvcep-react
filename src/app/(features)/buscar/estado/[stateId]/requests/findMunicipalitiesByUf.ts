@@ -1,7 +1,7 @@
 import { stateServiceFetch } from "@/app/clients/stateServiceFetch";
 import { useQuery } from "react-query";
 
-export type GetByStateProps = { state: string };
+export type FindMunicipalitiesByUfProps = { state: string };
 
 export interface IMunicipality {
   nome: string;
@@ -10,19 +10,21 @@ export interface IMunicipality {
 
 export type StateResponse = IMunicipality[];
 
-export const getByState = async (estado: string) => {
+export const findMunicipalitiesByUf = async (estado: string) => {
   const response = await stateServiceFetch<StateResponse>(estado, {
     method: "GET",
   });
   return response;
 };
 
-export const getByStateQueryKey = "getByState";
+export const findMunicipalitiesByUFQueryKey = "findMunicipalitiesByUf";
 
-export const useFederalUnity = ({ state }: GetByStateProps) => {
+export const useMunicipalitiesByUf = ({
+  state,
+}: FindMunicipalitiesByUfProps) => {
   return useQuery({
-    queryKey: ["getByState", state],
-    queryFn: () => getByState(state),
+    queryKey: ["findMunicipalitiesByUf", state],
+    queryFn: () => findMunicipalitiesByUf(state),
     enabled: !!state,
   });
 };

@@ -22,6 +22,7 @@ const globalStyles = (
           "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
           "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         background-color: #f5f5f5;
+  
       }
 
       /* Custom Global Styles */

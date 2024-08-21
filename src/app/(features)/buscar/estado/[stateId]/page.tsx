@@ -1,10 +1,10 @@
 "use client";
-import { useFederalUnity } from "./requests/getByState";
+import { useMunicipalitiesByUf } from "./requests/findMunicipalitiesByUf";
 import { useEffect } from "react";
 
 const StatePage = ({ params }: { params: { stateId: string } }) => {
   const { stateId } = params;
-  const { data, error, isLoading } = useFederalUnity({ state: stateId });
+  const { data, error, isLoading } = useMunicipalitiesByUf({ state: stateId });
 
   useEffect(() => {
     if (error) {
@@ -18,9 +18,9 @@ const StatePage = ({ params }: { params: { stateId: string } }) => {
     <div>
       <h1>Municipalities in {stateId}</h1>
       <ul>
-        {data?.map((municipality) => (
-          <li key={municipality.codigo_ibge}>
-            {municipality.nome} (IBGE Code: {municipality.codigo_ibge})
+        {data?.map((municipality, index) => (
+          <li key={`${municipality.codigo_ibge}-${index}`}>
+            {municipality.nome}
           </li>
         ))}
       </ul>
