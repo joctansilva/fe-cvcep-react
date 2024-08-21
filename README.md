@@ -38,33 +38,33 @@ Para executar o projeto é necessário ter o [Node.js](https://nodejs.org/en/) i
 
 ### 📂 Clonando o repositório
 
+```
 bash
-
 # Clone o repositório
-
 $ git clone https://github.com/joctansilva/fe-cvcep-react.git
+```
 
+### 📂 Acessando a pasta do projeto no computador
+```
 bash
-
 # Acesse a pasta do projeto
-
 $ cd cvcep
+```
 
-📦 Instalando as dependências
-
+### 📦 Instalando as dependências
+```
 bash
-
 # Instale as dependências
-
 $ npm install
+```
 
 🚀 Iniciando o servidor
 
+```
 bash
-
 # Inicie o servidor
-
 $ npm run dev
+```
 
 Pronto, a aplicação está rodando em http://localhost:3000.
 
